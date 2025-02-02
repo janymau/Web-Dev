@@ -112,6 +112,12 @@ body {
     border-radius: 8px;
 }
 
+.text {
+    position: absolute;
+    left: 100px;
+    top: 120px;
+}
+
 .column {
     margin: 10px;
     max-width: 200px;
@@ -146,6 +152,30 @@ body {
         margin: 0;
     }
     .text {
-        transform: scale(0.3);
+        transform: scale(0.5);
+        left: 0px;
+        top: 0;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .header {
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-side {
+        display: none;
+    }
+    .right-side {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+    .left-side {
+        display: none;
+    }
+    .right-side {
+        display: none;
     }
 }
