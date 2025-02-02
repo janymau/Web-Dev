@@ -1,0 +1,151 @@
+body {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: Segoe UI, SegoeUI, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding-bottom: 0px;
+}
+
+.links {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.logo {
+    width: 108px;
+    height: 23px;
+}
+
+.header {
+    padding-bottom: 10px;
+    padding-left: 90px;
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    height: 35px;
+    align-items: center;
+}
+
+.svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 22px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.links {
+    margin-right: 20px;
+}
+
+.blue-line {
+    background-color: #0067b8;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+}
+
+.stop-link {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.gallery {
+    margin-left: 60px;
+    margin-right: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.gallery-box {
+    justify-content: space-between;
+    width: 330px;
+    height: 480px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.gallery-box-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 150px 30px;
+    width: 300px;
+    font-weight: normal;
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gallery-text {
+    font-size: 13px;
+}
+
+.container {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.column {
+    margin: 10px;
+    max-width: 200px;
+}
+
+.column h3 {
+    font-size: 10px;
+    color: gray;
+    display: inline-block;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 4px;
+    color: #555;
+}
+
+.column ul li a {
+    font-size: 7px;
+    text-decoration: none;
+    color: gray;
+}
+
+@media (max-width:1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+    }
+    .text {
+        transform: scale(0.3);
+    }
+}

@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.img {
+    height: 100%;
+}
+
+.welcome-interface,
+.welcome-interface-2 {
+    border-color: #D300C5;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 30px;
+    width: 220px;
+}
+
+.welcome-interface-2 {
+    position: relative;
+    transform: rotate(11deg);
+    left: -100px;
+    top: 60px;
+}
+
+.welcome-interface {
+    transform: rotate(-8deg);
+}
+
+.login-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    flex-direction: column;
+}
+
+.input-login-place {
+    width: 260px;
+    height: 20px;
+    padding: 9px 0px 7px 8px;
+    font-size: 12px;
+    background-color: #121212;
+    color: white;
+    border-style: solid;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border-width: 1px;
+}
+
+.login-facebook {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 26px;
+    gap: 10px;
+}
+
+.login-facebook a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.login-facebook a:hover {
+    color: white;
+}
+
+.login-facebook img {
+    height: 100%;
+    width: 25px;
+}
+
+.logo-img-div {
+    margin-left: 0px;
+    padding-right: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    align-items: center;
+}
+
+.login-button {
+    width: 272px;
+    height: 35px;
+    background-color: rgba(0, 149, 246, 0.86);
+    color: white;
+    border-style: solid;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.border-line-bottom {
+    width: 90px;
+    border-bottom: 1px solid rgba(30, 30, 30, 0.97);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.border-line {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 272px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 500px 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 728px) {
+    .img {
+        display: none;
+    }
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
