@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTask {
+    display: grid;
+    width: 700px;
+    align-items: center;
+    border-width: 1px;
+    padding-left: 15px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-columns: 30px 35px 1fr 100px;
+}
+
+.input:hover,
+.input:focus {
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-style: solid;
+}
+
+.tasks {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.doneButtonElement {
+    height: 20px;
+    width: 20px;
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-style: solid;
+}
+
+.deleteButton {
+    padding: 5px;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.button:hover,
+.button:focus {
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    padding-left: 5px;
+}

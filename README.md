@@ -2,6 +2,8 @@
 The lab works for Web Development.
 
 
-The lab 1: until 25 January.
+The lab 1: until 25 January. Done 💯
 
-The lab 2 : until 2 February.
+The lab 2 : until 2 February. Done 💯
+
+The lab 3 : untill 9 February Done 💯
