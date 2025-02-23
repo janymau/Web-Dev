@@ -1,0 +1,7 @@
+.main {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    justify-content: space-between;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+}

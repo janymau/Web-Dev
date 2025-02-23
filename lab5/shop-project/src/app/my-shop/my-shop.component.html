@@ -1,0 +1,38 @@
+<div style="display:flex;
+justify-content: center;
+align-items: center;
+background-color: darkblue;
+padding: 0;
+color: white;">
+
+    <h1>Bebra Shop</h1>
+
+</div>
+<div>
+    <h1 style="padding-left: 90px; font-weight: bold; ">{{sortType}}</h1>
+    <select style="left: calc(100% - 295px); position: relative; height: 30px; width: 200px; padding-left: 30px;" [(ngModel)]="sortType" (change)="sortProducts()">
+        <option *ngFor="let sort of sortTypes">{{sort}}</option>
+        
+    </select>
+
+
+</div>
+<div class="main">
+
+    <div class="card" *ngFor="let card of products">
+        <div class="img-card-div">
+            <img [src]="card.img" class="card-img">
+        </div>
+        <div class="text">
+            <h2 class="card-name">{{card.name}}</h2>
+            <p class="card-description">{{card.description}}</p>
+            <p class="price">{{card.price}} ₸</p>
+            <p class="rating">Рейтинг {{card.rating}}/5⭐</p>
+            <a href="{{card.kaspiLink}}" style="text-decoration: none; color: blue;">Подробнее</a>
+            <div class="but-button" style="display: flex; gap: 5px;">
+                <a href=" https://t.me/share/url?url={{card.link}} " target="_blank "><button class="buy ">Telegram</button></a>
+                <a href="https://wa.me/?text={{card.link}} " target="_blank "><button class="buy ">Whatsapp</button></a>
+            </div>
+        </div>
+    </div>
+</div>

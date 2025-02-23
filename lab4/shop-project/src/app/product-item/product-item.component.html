@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="img-card-div">
+        <img [src]="product.img" class="card-img">
+    </div>
+    <div class="text">
+        <h2 class="card-name">{{ product.name }}</h2>
+        <p class="card-description">{{ product.description }}</p>
+        <p class="price">{{ product.price }} ₸</p>
+        <p class="rating">Рейтинг {{ product.rating }}/5⭐</p>
+        <div class="act-div">
+            <button (click)="likeProduct()" class="act" style="background-color: lightcoral;">❤ {{ product.likes }}</button>
+            <button (click)="removeProduct()" class="act" style="background-color: red;">Удалить</button>
+
+        </div>
+        <div class="but-button" style="display: flex; gap: 5px;">
+            <a [href]="'https://t.me/share/url='+ product.link" target="_blank">
+                <button class="buy">Telegram</button>
+            </a>
+            <a [href]="'https://wa.me/?text=' + product.link" target="_blank">
+                <button class="buy" style="background-color: #25D366;">Whatsapp</button>
+            </a>
+        </div>
+
+    </div>
+</div>
