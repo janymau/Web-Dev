@@ -1,0 +1,9 @@
+<div *ngFor="let album of albums" class="albums-container">
+    <div class="album-card">
+        <img [src]="album.albumPhotoURL" alt="{{ album.albumName }}" width="300" height="300" (click)="goToAlbumPhotos(album.albumId)" style="display: inline-block;">
+        <h1>{{ album.albumName }}</h1>
+
+    </div>
+</div>
+
+<app-album-photos></app-album-photos>

@@ -1,0 +1,28 @@
+.albums-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+    margin: 0 auto;
+    background: #f0f4f0;
+}
+
+.album-card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: lightgreen;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.album-card img {
+    width: 100%;
+    border-radius: 8px;
+}

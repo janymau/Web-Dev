@@ -1,0 +1,12 @@
+.about-container {
+    background: #f0f4f0;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 22px;
+    color: #2d3e2d;
+    margin: 0 auto;
+    line-height: 1.6;
+}

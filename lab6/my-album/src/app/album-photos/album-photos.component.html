@@ -1,0 +1,7 @@
+<div *ngFor="let photo of selectedAlbum?.albumItems" class="photo-container">
+    <div class="photo-card">
+
+        <img [src]="photo.photoURL" alt="{{ photo.name }}" width="200" (click)="goToPhotoDetails(photo.id)">
+        <p>{{ photo.name }}</p>
+    </div>
+</div>
