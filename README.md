@@ -11,5 +11,7 @@ The lab 3 : untill 9 February. Done 💯
 The lab 4 : untill 16 February. Done 💯
 
 The lab 5 : untill 24 February. Done 💯
-test
 
+The lab 6 : untill 3 March. Done 💯
+
+The lab 7 : untill 23 March. Done 💯
