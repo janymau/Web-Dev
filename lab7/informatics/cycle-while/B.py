@@ -1,0 +1,1 @@
+print((lambda a: next(i for i in range(2, a + 1) if a % i == 0))(int(input())))

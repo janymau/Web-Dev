@@ -1,0 +1,1 @@
+print((lambda a: sum(int(i) * 2**(len(a)-j) for j,i in enumerate(a,1)))(input())) 

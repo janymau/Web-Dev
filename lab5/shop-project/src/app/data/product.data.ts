@@ -1,4 +1,5 @@
 import {Category} from "../models/product.model";
+
 export const PRODUCTS_DATA: Category[] =  [
      { name:"Телефоны",
       products:[

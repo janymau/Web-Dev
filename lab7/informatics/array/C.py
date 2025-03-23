@@ -1,0 +1,1 @@
+print((lambda a,b:len([b[i] for i in range(a) if b[i]>0]))(int(input()), list(map(int, input().split()))))

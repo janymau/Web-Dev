@@ -2,6 +2,7 @@
     <div class="img-card-div">
         <img [src]="product.img" class="card-img">
     </div>
+    <p (click)="navigateToDetails(product.price)">Подробнее</p>
     <div class="text">
         <h2 class="card-name">{{ product.name }}</h2>
         <p class="card-description">{{ product.description }}</p>

@@ -1,0 +1,1 @@
+print('\n'.join(map(str,(lambda a:  [i for i in range(1,a+1) if i**0.5 == int(i **0.5)])(int(input())))))

@@ -1,0 +1,1 @@
+print((lambda a,b: 'YES' if len([b[i] for i in range(1, a) if b[i] + b[i-1] < b[i] and b[i] < 0 or b[i] + b[i-1] > b[i] and b[i] > 0]) else "NO")(int(input()), list(map(int, input().split()))))

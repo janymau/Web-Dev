@@ -1,0 +1,1 @@
+print( (lambda a,b: a ** b ) (*list(map(float, input().split()))) )

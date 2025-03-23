@@ -1,0 +1,1 @@
+print((lambda a,b: ' '.join(b.split()[i] for i in range(a) if b.split()[i] % 2 == 0))(int(input()), input()))

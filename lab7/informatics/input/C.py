@@ -1,0 +1,1 @@
+print( (lambda a,b: int(b/a))(*[int(input()) for _ in range(2)]))

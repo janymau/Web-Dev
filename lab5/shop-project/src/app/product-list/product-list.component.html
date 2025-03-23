@@ -4,6 +4,6 @@
 border: none;
 color: #0A2540;">Товары категории : {{ selectedCategory.name }}</h2>
 <div class="main">
-    <app-product-item *ngFor="let product of selectedCategory.products" [product]="product" (remove)="removeProduct($event)">
+    <app-product-item *ngFor="let product of selectedCategory.products;" [product]="product" (remove)="removeProduct($event)">
     </app-product-item>
 </div>
