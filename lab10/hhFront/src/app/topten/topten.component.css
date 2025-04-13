@@ -1,0 +1,178 @@
+.vacancy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #ff5b26;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #2967b0;
+}
+
+.logo small {
+    font-size: 16px;
+    color: #777;
+    font-weight: normal;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    margin-left: 25px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    color: #ff5b26;
+}
+
+.vacancy-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.vacancy-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.vacancy-header h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.vacancy-count {
+    background-color: #f0f0f0;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.vacancy-list {
+    display: grid;
+    gap: 20px;
+}
+
+.vacancy-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.vacancy-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.vacancy-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.vacancy-title {
+    color: #2967b0;
+    font-size: 18px;
+    font-weight: 600;
+    flex: 1;
+    min-width: 200px;
+}
+
+.vacancy-salary {
+    color: #ff5b26;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.vacancy-company {
+    color: #666;
+    font-size: 14px;
+    width: 100%;
+}
+
+.vacancy-desc {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.vacancy-button {
+    background-color: #ff5b26;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vacancy-button:hover {
+    background-color: #e04a1b;
+}
+
+.no-vacancies {
+    text-align: center;
+    padding: 40px 0;
+    color: #666;
+}
+
+.back-link {
+    color: #2967b0;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 14px;
+}

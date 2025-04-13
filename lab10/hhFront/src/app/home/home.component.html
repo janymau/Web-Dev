@@ -1,0 +1,41 @@
+<div class="home-container">
+    <header class="header">
+        <div class="logo">
+            <h1>BezdarHunter</h1>
+        </div>
+        <nav class="navigation">
+
+        </nav>
+    </header>
+
+    <div class="top-vacancies" *ngIf="TopVacancies && TopVacancies.length > 0">
+        <h2>Главное</h2>
+        <div class="vacancy-list">
+            <div class="vacancy-card" *ngFor="let vacancy of TopVacancies">
+                <h3 (click)="goToVacancyDetails(vacancy.id)">{{ vacancy.name }}</h3>
+                <p>{{ vacancy.desc }}</p>
+                <p><strong>Зарплата:</strong> {{ vacancy.salary | currency:'RUB':'symbol-narrow':'1.0-0' }}</p>
+                <p><strong>Компания:</strong> {{ vacancy.company.name }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-links">
+        <div class="link-card" (click)="goToVacancies()">
+            <h3>Все вакансии</h3>
+            <p>Просмотр всех доступных вакансий</p>
+        </div>
+        <div class="link-card" (click)="goToCompanies()">
+            <h3>Все компании</h3>
+            <p>Список компаний-работодателей</p>
+        </div>
+        <div class="link-card" (click)="goToTopTen()">
+            <h3>Топ-10 вакансий</h3>
+            <p>Самые популярные вакансии</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 BezdarHunter. Все права защищены.</p>
+    </footer>
+</div>

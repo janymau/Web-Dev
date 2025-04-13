@@ -1,0 +1,29 @@
+<div class="companies-container">
+    <header class="header">
+        <div class="logo">
+            <h1>BezdarHunter</h1>
+        </div>
+        <nav class="navigation">
+        </nav>
+    </header>
+
+    <div class="companies-list" *ngIf="Companies && Companies.length > 0">
+        <h2 class="section-title">Все компании</h2>
+        <div class="company-grid">
+            <div class="company-card" *ngFor="let company of Companies" (click)="goToCompanyDetail(company.id)">
+                <div class="company-logo-placeholder">
+                    {{ company.name.charAt(0).toUpperCase() }}
+                </div>
+                <div class="company-info">
+                    <h3 class="company-name">{{ company.name }}</h3>
+                    <p class="company-city">{{ company.city }}</p>
+                    <p class="company-desc">{{ company.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 BezdarHunter. Все права защищены.</p>
+    </footer>
+</div>

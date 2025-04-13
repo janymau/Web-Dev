@@ -1,0 +1,36 @@
+<div class="vacancy-container">
+    <header class="header">
+        <div class="logo">
+            <h1>BezdarHunter</h1>
+        </div>
+
+    </header>
+
+    <main class="vacancy-content">
+        <div class="vacancy-header">
+            <h2>Все вакансии</h2>
+            <div class="vacancy-count">{{ Vacancies.length }} вакансий</div>
+        </div>
+
+        <div class="vacancy-list" *ngIf="Vacancies && Vacancies.length > 0">
+            <div class="vacancy-item" *ngFor="let vacancy of Vacancies">
+                <div class="vacancy-main">
+                    <h3 class="vacancy-title">{{ vacancy.name }}</h3>
+                    <div class="vacancy-salary">{{ vacancy.salary | number }} ₸</div>
+                    <div class="vacancy-company">{{ vacancy.company.name }}</div>
+                </div>
+                <div class="vacancy-desc">{{ vacancy.desc}}</div>
+                <button class="vacancy-button" (click)="goToVacancyDetails(vacancy.id)">Подробнее</button>
+            </div>
+        </div>
+
+        <div class="no-vacancies" *ngIf="!Vacancies || Vacancies.length === 0">
+            <p>На данный момент нет доступных вакансий</p>
+            <a routerLink="/" class="back-link">Вернуться на главную</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 BezdarHunter. Все права защищены.</p>
+    </footer>
+</div>
